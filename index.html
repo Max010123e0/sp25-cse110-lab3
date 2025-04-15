@@ -1,8 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 110 Team Project - Meeting Minutes</title>
+    <link rel="icon" href="Images/favicon-32x32.png" type="image/png">
   </head>
   <body>
+    <header>
+      <h1>Card Brainstorming - Meeting Minutes</h1>
+      <nav>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#Unfinished_business">Unfinished Business</a></li>
+          <li><a href="#New_business">New Business</a></li>
+          <li><a href="#comments">Comments</a></li>
+          <li><a href="#recordings">Meeting Recordings</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="meeting-info">
+        <h2>Meeting Information</h2>
+        <p><strong>Meeting Type:</strong> Documentation</p>
+        <p><strong>Date:</strong> <em>April 15, 2025</em></p>
+        <p><strong>Time:</strong> <i>3:00 PM - 5:00 PM</i></p>
+        <p><strong>Location:</strong> CSE Building Basement</p>
+      </section>
+
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <div class="attendees">
+          <p>Present:</p>
+          <ul>
+            <li>Max</li>
+            <li>Hiroe</li>
+            <li>Chris</li>
+          </ul>
+          <p>Absent:</p>
+          <ul>
+            <li>Brown</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Project introduction and overview</li>
+          <li>Define Card in Web development</li>
+          <li>Brainstorm about how to utilize card</li>
+          <li>Assign initial tasks</li>
+        </ol>
+      </section>
+
+      <section id="Unfinished_business">
+        <h2>Unfinished Business from Previous Meeting</h2>
+        <p><i>First meeting - no unfinished business</i></p>
+      </section>
+
+      <hr>
+
+      <section id="New_business">
+        <h2>New Business</h2>
+        
+        <article>
+          <h3>Card UI Component Definition</h3>
+          <p>The team discussed the following definition and characteristics of cards:</p>
+          <ul>
+            <li>Cards are contained UI components that group related information</li>
+            <li>Cards often include images, text, and action buttons</li>
+            <li>They provide a clean way to separate different pieces of content</li>
+          </ul>
+        </article>
+
+        <h3>UI Design</h3>
+        <p>Hiroe presented initial UI design concepts:</p>
+        <img src="Images/CardUiDesign.png" alt="Sketch of UI design" width="400" height="300">
+
+        <h3>Utilization of Cards</h3>
+        <ul>
+          <li>Show info like recipes, articles, profiles, products</li>
+          <li>Use in games (like card games), dashboards, or quizzes</li>
+          <li>Act as links or entry points to deeper content</li>
+        </ul>
+
+        <h3>Initial Tasks Assignment</h3>
+        <details>
+          <summary>View Task Assignments</summary>
+          <ul>
+            <li>Max: Project setup and repository creation</li>
+            <li>Hiroe: Basic UI implementation</li>
+            <li>Chris: Actions and active button implementations</li>
+            <li>Brown: Write Documentation</li>
+          </ul>
+        </details>
+      </section>
+
+      <section id="comments">
+        <h2>Comments, Questions, and Concerns</h2>
+        <ul>
+          <li>Hiroe asked about <span>browser compatibility</span> requirements - <b>Decision:</b> Support latest two versions of Safari and Google Chrome</li>
+          <li>Chris raised concern about color accessibility - <b>Decision:</b> Will implement high-contrast mode</li>
+        </ul>
+      </section>
+
+      <section id="recordings">
+        <h2>Meeting Recordings</h2>
+        
+        <h3>Audio Recording</h3>
+        <audio controls>
+          <source src="Medias/sample_audio.m4a" type="audio/m4a">
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Recording</h3>
+        <video width="320" height="240" controls>
+          <source src="Medias/sample_video.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+      <hr>
+
+      <section id="feedback-form">
+        <h2>Hawaiian Pizza Survey</h2>
+        <form>
+          <fieldset>
+            <legend>Share your thoughts on Hawaiian pizza</legend>
+            
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="birth-date">Your Birth Date:</label>
+            <input type="date" id="birth-date" name="birth-date"><br><br>
+            
+            <label>Do you like Hawaiian pizza (with pineapple)?</label><br>
+            <input type="radio" id="love" name="pizza-opinion" value="love">
+            <label for="love">Love it!</label><br>
+            <input type="radio" id="like" name="pizza-opinion" value="like">
+            <label for="like">It's okay</label><br>
+            <input type="radio" id="neutral" name="pizza-opinion" value="neutral">
+            <label for="neutral">No strong feelings</label><br>
+            <input type="radio" id="dislike" name="pizza-opinion" value="dislike">
+            <label for="dislike">Strongly against it</label><br><br>
+            
+            <label>Which toppings do you prefer on Hawaiian pizza?</label><br>
+            <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+            <label for="pineapple">Pineapple (traditional)</label><br>
+            <input type="checkbox" id="ham" name="toppings" value="ham">
+            <label for="ham">Ham</label><br>
+            <input type="checkbox" id="bacon" name="toppings" value="bacon">
+            <label for="bacon">Bacon</label><br>
+            <input type="checkbox" id="jalapeno" name="toppings" value="jalapeno">
+            <label for="jalapeno">Jalapeños</label><br><br>
+            
+            <label for="crust-type">What type of crust do you prefer?</label><br>
+            <select id="crust-type" name="crust-type">
+              <option value="">Select a crust type</option>
+              <option value="thin">Thin crust</option>
+              <option value="hand-tossed">Hand-tossed</option>
+              <option value="deep-dish">Deep dish</option>
+              <option value="stuffed">Stuffed crust</option>
+            </select><br><br>
+            
+            <label for="pizza-comments">Tell us why you love or hate Hawaiian pizza:</label><br>
+            <textarea id="pizza-comments" name="pizza-comments" rows="4" cols="50"></textarea><br><br>
+            
+            <label for="pizza-place">Where's your favorite place to get Hawaiian pizza?</label><br>
+            <input list="pizza-places" id="pizza-place" name="pizza-place">
+            <datalist id="pizza-places">
+              <option value="Domino's">
+              <option value="Pizza Hut">
+              <option value="Papa John's">
+              <option value="Local pizzeria">
+              <option value="Homemade">
+            </datalist><br><br>
+            
+            <button type="submit">Submit Pizza Opinion</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Meeting minutes recorded by: Max Kim | Last updated: April 15, 2025</p>
+      <p><a href="mailto:team@example.com">Contact the team</a></p>
+    </footer>
   </body>
 </html>
