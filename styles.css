@@ -26,6 +26,15 @@
     margin: auto;
     padding: 20px;
   }
+
+  input[type="text"] {
+    border: 2px dashed var(--main-color);
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    background-color: #f0f8ff;
+    color: #222;
+    margin-bottom: 1em;
+  }
   
   /* Heading styles */
   h1, h2, h3 {
