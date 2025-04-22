@@ -217,4 +217,81 @@
     border-radius: 8px;
   }
 
+  .attendees p {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
   
+  .attendees li {
+    display: inline-block;
+    background-color: #e3f2fd;
+    padding: 0.3em 0.8em;
+    margin: 0.2em;
+    border-radius: 3px;
+  }
+  
+  .mobile-hidden {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .mobile-hidden {
+      display: inline-block;
+    }
+  }
+  
+  .section-badge {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.8em;
+    border-radius: 4px;
+  }
+  
+  #agenda {
+    margin-top: 1.5rem;
+    margin-bottom: 2em;
+    padding: 1vw 2vw;
+  }
+  
+  #agenda ol {
+    counter-reset: item;
+    list-style-type: none;
+  }
+  
+  #agenda li {
+    counter-increment: item;
+    margin-bottom: 1em;
+    padding-left: 2em;
+    position: relative;
+  }
+  
+  #agenda li::before {
+    content: counter(item);
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    padding: 0.2em 0.5em;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+  }
+  
+  hr {
+    height: 2px;
+    background-color: #eee;
+    border: none;
+    margin: 20px 0;
+  }
+  
+  strong {
+    letter-spacing: 0.5pt;
+  }
+  
+  em {
+    font-size: 11pt;
+  }
