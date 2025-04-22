@@ -15,17 +15,17 @@
   margin: 0;
   padding: 0;
 }
-
-/* === Body and Typography === */
-body {
-  font-family: var(--body-font, sans-serif);
-  line-height: 1.6;
-  color: var(--text-color, #333);
-  background-color: var(--background-light, white);
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
+  
+  /* === Body and Typography === */
+  body {
+    font-family: var(--body-font, sans-serif);
+    line-height: 1.6;
+    color: var(--text-color, #333);
+    background-color: var(--background-light, white);
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
 
   input[type="text"] {
     border: 2px dashed var(--main-color);
