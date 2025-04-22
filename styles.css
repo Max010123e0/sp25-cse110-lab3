@@ -53,8 +53,31 @@
     margin-top: 3vh;
   }
   
+  @media (min-width: 768px) {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #New_business, #recordings, footer {
+      grid-column: 1 / -1;
+    }
+  }
 
-  
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+    
+    nav ul li {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+    
+    img, video {
+      max-width: 100%;
+      height: auto;
+    }
+  }
   
   #meeting-info {
     background-color: color(display-p3 0.95 0.97 1);
